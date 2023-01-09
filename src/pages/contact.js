@@ -1,43 +1,64 @@
-import React, { useState } from "react";
-const Contact=()=>{
-    const [status,setStatus]= useState('submit');
-    const handleSubmit= async (e) =>{
-        e.preventDefault()
-        setStatus('sending')
-        const {name,email,message}=e.targets.elements;
-        let details={
-            name: name.value,
-            email: email.value,
-            message: message.value
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
-        };
-        let response= await fetch("https://localhost:3000/contact",{
-            method: "POST",
-            headers:{
-                "Content-Type": "applicayion/json;charset=utf-8"
-            },
-            body: JSON.stringify(details),
-        });
-        setStatus("Submit");
-        let result = await response.json();
-        alert(result.status)
-    };
-    return(
-        <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" required />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" required />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" required />
-        </div>
-        <button type="submit">{status}</button>
+
+
+const SERVICE_ID = 'service_9kzaxgz';
+const TEMPLATE_ID = "template_b1jr8se";
+const USER_ID = "MBebflZ6xCJD_L1kK";
+
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        form.current,
+        USER_ID
+      )
+      .then(
+        (result) => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Message sent successfully'
+          })
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          Swal.fire({
+            icon: 'eroor',
+            title: 'Oops something went wrong'
+          })
+          console.log(error.text);
+        }
+      );
+      form.current.value=''
+  };
+
+  return (
+    <div className='Contact'>
+      <h2>Contact Me</h2>
+      <form ref={form} onSubmit={sendEmail}>
+        <fieldset>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+        </fieldset>
       </form>
-    )
-}
+      <p>GitHub</p>
+      <p>Linkedin</p>
+      <p>Email</p>
+    </div>
+  );
+};
 export default Contact;
