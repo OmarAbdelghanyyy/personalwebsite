@@ -1,0 +1,17 @@
+.resume-pdf{
+    width: 640px; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    border: 1px solid black;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+.resume{
+    background-color: black;
+}

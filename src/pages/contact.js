@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import './contact.css'
 
-
+//TODO: create a css file this component
 
 const SERVICE_ID = 'service_9kzaxgz';
 const TEMPLATE_ID = "template_b1jr8se";
@@ -42,6 +43,7 @@ const Contact = () => {
   };
 
   return (
+    <>
     <div className='Contact'>
       <h2>Contact Me</h2>
       <form ref={form} onSubmit={sendEmail}>
@@ -55,10 +57,14 @@ const Contact = () => {
         <input type="submit" value="Send" />
         </fieldset>
       </form>
-      <p>GitHub</p>
-      <p>Linkedin</p>
-      <p>Email</p>
+      <div className='footer'>
+        <p>GitHub</p>
+        <p>Linkedin</p>
+      </div>
+
     </div>
+
+    </>
   );
 };
 export default Contact;
