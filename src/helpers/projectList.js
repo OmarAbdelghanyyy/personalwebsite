@@ -8,31 +8,36 @@ export const ProjectList=[
     {
         name:"TicTacToe Game",
         image : tictactoeimage,
-        text: "Made using Java"
+        text: "Made using Java",
+        repo:'https://github.com/OmarAbdelghanyyy/TicTacToeGame'
         
     },
 
     {
         name: "Real Time Currency Converter",
         image: currencyconverter,
-        text : "Made using Java"
+        text : "Made using Java",
+        repo: "https://github.com/OmarAbdelghanyyy/Currency-Converter"
     },
 
     {
         name:'ToDoList',
         image:todolist,
-        text: "Made using React"
+        text: "Made using React",
+        repo:"https://github.com/OmarAbdelghanyyy/todolist"
     },
 
     {
         name: 'ThermoMug',
         image: thermomug,
-        text: "Made using HTML, CSS and JavaScript"
+        text: "Made using HTML, CSS and JavaScript",
+        repo:"https://github.com/SEG2900-Group21/SEG2900-group21"
     },
 
     {
         name: "MovieApp",
         image: movieappimg,
-        text: "Made using Reacrt"
+        text: "Made using React",
+        repo:"https://github.com/OmarAbdelghanyyy/MovieApp"
     }
 ]
