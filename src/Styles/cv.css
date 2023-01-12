@@ -5,13 +5,19 @@
     padding: 10px;
     position: relative;
     border: 1px solid black;
+    padding-top: 10px;
+    align-content: center;
+    
 }
 
 h2{
     text-align: center;
-    color: white;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .resume{
-    background-color: black;
+    background-color: white;
+    padding-top: 30px;
 }

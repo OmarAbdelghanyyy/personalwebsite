@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 20px 20px;
+}
+#navbar{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease-in-out;   
+}
+#navbar li a:hover{
+    color:grey;
+}
+#mobile{
+    display: none;
+}
+#mobile i{
+    color: white;
+    align-items: center;
+}
+html,body{
+    overflow-x: hidden;
+}
+

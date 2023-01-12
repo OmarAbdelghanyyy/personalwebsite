@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-import './contact.css'
+import '../Styles/contact.css'
 
 //TODO: create a css file this component
 
@@ -49,18 +49,15 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail}>
         <fieldset>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input type="text" name="user_name" required/>
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input type="email" name="user_email" required/>
         <label>Message</label>
-        <textarea name="message" />
+        <textarea name="message" required/>
         <input type="submit" value="Send" />
         </fieldset>
       </form>
-      <div className='footer'>
-        <p>GitHub</p>
-        <p>Linkedin</p>
-      </div>
+  
 
     </div>
 

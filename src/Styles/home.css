@@ -1,0 +1,94 @@
+#pycircle{
+    opacity: 50%;
+    color: greenyellow;
+}
+#javacircle{
+    color: orange;
+    opacity: 60%;
+}
+#htmlcircle{
+    color:darkorchid;
+    opacity: 20%;
+}
+#csscircle{
+    color:aqua;
+    opacity: 40%;
+}
+
+#jscircle{
+    color:rgb(255, 226, 7);
+    opacity: 60%;
+}
+#reactcircle{
+   color: rgb(0, 200, 255);
+   opacity: 70%;
+}
+
+.fa-brands{
+    size: 90px;
+}
+.home{
+    align-items: center;
+    width: 100%;
+    
+}
+.introduction{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+  
+}
+.introduction h2{
+    font-size: 60px;
+    height: px;
+}
+.introduction .phrase{
+    width: 40%;
+    font-size: 20px;
+}
+.skillset h4{
+    align-items: center;
+    font-size: 40px;
+}
+p:not(description)
+{
+    display: inline-flex;
+}
+
+.skillItem {
+    display: inline-block;
+    width: 40vh;
+    text-align: center;
+    margin: 5px 50px;
+    font-size: 2.7vh;
+    padding-top: 5%;
+  
+  }
+  .home{
+    padding: 4%, 0%;
+  }
+  .title{
+    font-weight: 900;
+    font-size: 7vh;
+    color: black;
+    text-align: center;
+  }
+  .name{
+    font-weight: 400;
+  }
+  #skills{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }

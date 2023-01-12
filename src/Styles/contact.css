@@ -19,12 +19,11 @@ form {
   label {
     display: block;
     margin: 0.5rem 0;
-    color: #ffffff;
+    color: black;
   }
   
   input,
-  textarea,
-  select {
+  textarea {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
@@ -34,7 +33,7 @@ form {
   input, textarea {
     background-color: white;
     border: 0.5px transparent grey;
-    color: #ffffff;
+    color: black;
   }
   
   .inline {
@@ -54,10 +53,8 @@ form {
     min-width: 300px;
   }
   .Contact{
-    background-color: black;
+    background-color: white ;
     padding-bottom: 500PX ;
   
   }
-  .footer{
-    background-color: black;
-  }
+ 
