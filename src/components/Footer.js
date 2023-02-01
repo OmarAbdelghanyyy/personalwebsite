@@ -9,10 +9,10 @@ const Footer= ()=>{
     <div className="footer">
     <div className="media">
         <Link href="https://www.linkedin.com/in/omar-abdelghany-027585254/" className={ClassNames.Link} target="_blank">
-            <LinkedInIcon style={{color:"white"}}  className="linkedinicon"/>
+            <LinkedInIcon style={{color:"white"}}  className="icon"/>
         </Link>
         <Link href="https://github.com/OmarAbdelghanyyy" className={ClassNames.Link} target ="_blank">
-             <GitHubIcon style={{color:"white"}}  className="githubicon"/>  
+             <GitHubIcon style={{color:"white"}}  className="icon"/>  
         </Link>
         <p>   @Copyright 2023
         </p>

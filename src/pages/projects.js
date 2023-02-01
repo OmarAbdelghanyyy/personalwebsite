@@ -5,7 +5,7 @@ import {ProjectList} from '../helpers/projectList';
 function Projects(){
     return(
         <div className="projects">
-           <h1>My Personal Projects</h1> 
+           <h1 className="personal-projects-header">My Personal Projects</h1> 
            <div className="projectList">
             {ProjectList.map(
                 (project,index)=>{
